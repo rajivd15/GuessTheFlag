@@ -1,6 +1,0 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "0003645ed39aec87df3635807c933ce2"
-build_time: [553672799, 422221000]
-inputs:
-  "/Users/rdeshmu/iphone_workspace/Hacking With Swift Projects/GuessTheFlag/GuessTheFlag/GuessTheFlag/ViewController.swift": [553672796, 0]
-  "/Users/rdeshmu/iphone_workspace/Hacking With Swift Projects/GuessTheFlag/GuessTheFlag/GuessTheFlag/AppDelegate.swift": [553563350, 0]
