@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,6 +24,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sy1-h7-uq7" userLabel="Button1">
                                 <rect key="frame" x="88" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sy1-h7-uq7" secondAttribute="height" multiplier="2:1" id="hnV-cT-6az"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmv-kn-Uqb"/>
@@ -30,6 +34,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkK-Gc-GE7" userLabel="Button2">
                                 <rect key="frame" x="88" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FkK-Gc-GE7" secondAttribute="height" multiplier="2:1" id="lqA-h3-MXp"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stS-lV-Abo"/>
@@ -37,6 +44,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hi-Bt-LD3" userLabel="Button3">
                                 <rect key="frame" x="88" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Hi-Bt-LD3" secondAttribute="height" multiplier="2:1" id="6PE-SU-EZ3"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6Y-om-aGz"/>
@@ -48,9 +58,12 @@
                             <constraint firstItem="sy1-h7-uq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bed-PF-32w"/>
                             <constraint firstItem="FkK-Gc-GE7" firstAttribute="top" secondItem="sy1-h7-uq7" secondAttribute="bottom" constant="30" id="D30-WW-DKx"/>
                             <constraint firstItem="2Hi-Bt-LD3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SaJ-5z-XSx"/>
+                            <constraint firstItem="2Hi-Bt-LD3" firstAttribute="height" secondItem="FkK-Gc-GE7" secondAttribute="height" id="TQc-ez-mMI"/>
                             <constraint firstItem="sy1-h7-uq7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="UEs-Zz-wRV"/>
                             <constraint firstItem="2Hi-Bt-LD3" firstAttribute="top" secondItem="FkK-Gc-GE7" secondAttribute="bottom" constant="30" id="Xeu-Uq-9ag"/>
                             <constraint firstItem="FkK-Gc-GE7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dU9-7K-fuz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2Hi-Bt-LD3" secondAttribute="bottom" constant="20" id="kPM-iT-zIy"/>
+                            <constraint firstItem="FkK-Gc-GE7" firstAttribute="height" secondItem="sy1-h7-uq7" secondAttribute="height" id="lyy-FO-1aH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W4q-AM-nzl"/>
